@@ -29,17 +29,46 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GreetingCard));
-            this.label1 = new System.Windows.Forms.Label();
+            this.nameLabel = new System.Windows.Forms.Label();
+            this.cardLabel = new System.Windows.Forms.Label();
+            this.animationButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // nameLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 239);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.nameLabel.AutoSize = true;
+            this.nameLabel.BackColor = System.Drawing.Color.Black;
+            this.nameLabel.ForeColor = System.Drawing.Color.White;
+            this.nameLabel.Location = new System.Drawing.Point(29, 235);
+            this.nameLabel.Name = "nameLabel";
+            this.nameLabel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.nameLabel.Size = new System.Drawing.Size(171, 13);
+            this.nameLabel.TabIndex = 0;
+            this.nameLabel.Text = "Nicholas Levesque, Sept 26, 2017";
+            // 
+            // cardLabel
+            // 
+            this.cardLabel.AutoSize = true;
+            this.cardLabel.BackColor = System.Drawing.Color.DimGray;
+            this.cardLabel.ForeColor = System.Drawing.Color.White;
+            this.cardLabel.Location = new System.Drawing.Point(26, 0);
+            this.cardLabel.Name = "cardLabel";
+            this.cardLabel.Size = new System.Drawing.Size(98, 13);
+            this.cardLabel.TabIndex = 1;
+            this.cardLabel.Text = "Libra Greeting Card";
+            // 
+            // animationButton
+            // 
+            this.animationButton.BackColor = System.Drawing.SystemColors.ControlText;
+            this.animationButton.ForeColor = System.Drawing.Color.Crimson;
+            this.animationButton.Location = new System.Drawing.Point(86, 183);
+            this.animationButton.Name = "animationButton";
+            this.animationButton.Size = new System.Drawing.Size(95, 23);
+            this.animationButton.TabIndex = 2;
+            this.animationButton.Text = "Animation Start";
+            this.animationButton.UseVisualStyleBackColor = false;
+            this.animationButton.Visible = false;
+            this.animationButton.Click += new System.EventHandler(this.AnimationButton_Click);
             // 
             // GreetingCard
             // 
@@ -48,8 +77,10 @@
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(240, 257);
+            this.Controls.Add(this.animationButton);
+            this.Controls.Add(this.cardLabel);
+            this.Controls.Add(this.nameLabel);
             this.Name = "GreetingCard";
             this.Text = "Greeting Card";
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.GreetingCard_MouseClick);
@@ -60,7 +91,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label nameLabel;
+        private System.Windows.Forms.Label cardLabel;
+        private System.Windows.Forms.Button animationButton;
     }
 }
 
