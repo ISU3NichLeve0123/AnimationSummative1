@@ -109,5 +109,8 @@
   <ItemGroup>
     <None Include="Resources\Computer_Start-Up-Your_Mom-1280862923.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ta Da-SoundBible.com-1884170640.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

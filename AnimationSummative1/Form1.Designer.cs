@@ -59,7 +59,7 @@
             // 
             // animationButton
             // 
-            this.animationButton.BackColor = System.Drawing.SystemColors.ControlText;
+            this.animationButton.BackColor = System.Drawing.Color.White;
             this.animationButton.ForeColor = System.Drawing.Color.Crimson;
             this.animationButton.Location = new System.Drawing.Point(86, 183);
             this.animationButton.Name = "animationButton";

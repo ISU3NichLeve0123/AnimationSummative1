@@ -121,4 +121,7 @@
   <data name="Computer_Start_Up_Your_Mom_1280862923" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Computer_Start-Up-Your_Mom-1280862923.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="Ta_Da_SoundBible_com_1884170640" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ta Da-SoundBible.com-1884170640.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

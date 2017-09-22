@@ -68,5 +68,14 @@ namespace AnimationSummative1.Properties {
                 return ResourceManager.GetStream("Computer_Start_Up_Your_Mom_1280862923", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Ta_Da_SoundBible_com_1884170640 {
+            get {
+                return ResourceManager.GetStream("Ta_Da_SoundBible_com_1884170640", resourceCulture);
+            }
+        }
     }
 }

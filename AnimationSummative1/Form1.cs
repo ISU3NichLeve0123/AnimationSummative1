@@ -17,12 +17,6 @@ namespace AnimationSummative1
         public GreetingCard()
         {
             InitializeComponent();
-            Graphics fg = this.CreateGraphics();
-            Font drawFont = new Font("Arial", 70, FontStyle.Bold);
-            SolidBrush drawBrush = new SolidBrush(Color.Red);
-
-
-            fg.DrawString("Hello", drawFont, drawBrush, 600, 400);
         }
 
         private void GreetingCard_MouseClick(object sender, MouseEventArgs e)
@@ -41,14 +35,15 @@ namespace AnimationSummative1
             Graphics fg = this.CreateGraphics();
             Pen whitePen = new Pen(Color.White,2);
             SolidBrush whiteBrush = new SolidBrush(Color.White);
-            Pen blackPen = new Pen(Color.Black,5);
-            Font TittleFont = new Font("Arial", 20, FontStyle.Bold);
-            Font drawFont = new Font("Arial", 12,FontStyle.Italic);
+            SolidBrush greenBrush = new SolidBrush(Color.Green);
+            SolidBrush yellowBrush = new SolidBrush(Color.Yellow);
+            Font tittleFont = new Font("Arial", 10, FontStyle.Bold);
+            Font paragraphFont = new Font("Courier New", 6,FontStyle.Italic);
             SoundPlayer startUp = new SoundPlayer(Properties.Resources.Computer_Start_Up_Your_Mom_1280862923);
             startUp.PlaySync();
             animationButton.Dispose();
 
-            //Showing the drawing of the constellation
+            //Showing and drawing  the constellation Libra
             fg.DrawEllipse(whitePen, 58, 67, 2, 4);
             fg.FillEllipse(whiteBrush, 58, 67, 2, 4);
             Thread.Sleep(600);
@@ -84,6 +79,18 @@ namespace AnimationSummative1
             Thread.Sleep(600);
             fg.DrawLine(whitePen, 160, 190, 170, 200);
             Thread.Sleep(600);
+
+            //Drawing the tittle and Paragraph for libra and playign the  taDa sound
+            fg.DrawString("Libra:The Scales Of Balance", tittleFont, greenBrush, 30, 10);
+            Thread.Sleep(2000);
+            fg.DrawString("Libra:This constellation stands for law, balance, ", paragraphFont, yellowBrush, 0, 210);
+            Thread.Sleep(1000);
+            fg.DrawString(" and justice.The altertanite name for libra is scorpions claw. ", paragraphFont, yellowBrush, 0, 230);
+            Thread.Sleep(1000);
+            fg.DrawString(" and this is my birth zodiac sign. ", paragraphFont, yellowBrush, 0, 245);
+            SoundPlayer taDa = new SoundPlayer(Properties.Resources.Ta_Da_SoundBible_com_1884170640);
+            taDa.PlaySync();
+            Thread.Sleep(60000);
         }
     }
 }
