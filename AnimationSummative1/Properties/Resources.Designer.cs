@@ -70,6 +70,16 @@ namespace AnimationSummative1.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon Icons8_Windows_8_Science_Scales {
+            get {
+                object obj = ResourceManager.GetObject("Icons8_Windows_8_Science_Scales", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream Ta_Da_SoundBible_com_1884170640 {
