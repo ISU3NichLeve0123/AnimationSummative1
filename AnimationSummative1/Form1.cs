@@ -1,4 +1,6 @@
-﻿using System;
+﻿//Nicholas levesque, Sept 27, 2017
+//this program demonstrated timing effects with sounds and graphics
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -51,54 +53,54 @@ namespace AnimationSummative1
             fg.DrawEllipse(greenPen, 94, 140, 2, 4);
             fg.FillEllipse(greenBrush,94, 140, 2, 4);
             Thread.Sleep(600);
-            fg.DrawLine(goldPen, 58, 67, 94, 140);
+            fg.DrawLine(goldPen, 59, 69, 95, 142);
             Thread.Sleep(600);
             fg.DrawEllipse(greenPen, 94, 180, 2, 4);
             fg.FillEllipse(greenBrush, 94, 180, 2, 4);
             Thread.Sleep(600);
-            fg.DrawLine(goldPen, 94, 140,94,180);
+            fg.DrawLine(goldPen, 95, 142,95,182);
             Thread.Sleep(600);
             fg.DrawEllipse(greenPen, 80, 190, 2, 4);
             fg.FillEllipse(greenBrush, 80, 190, 2, 4);
             Thread.Sleep(600);
-            fg.DrawLine(goldPen, 94, 180, 80, 190);
+            fg.DrawLine(goldPen, 95, 182, 81, 192);
             Thread.Sleep(600);
             fg.DrawEllipse(greenPen, 120, 40, 2, 4);
             fg.FillEllipse(greenBrush, 120, 40,2, 4);
             Thread.Sleep(600);
-            fg.DrawLine(goldPen, 58, 67, 120, 40);
+            fg.DrawLine(goldPen, 59, 69, 121, 42);
             Thread.Sleep(600);
             fg.DrawEllipse(greenPen, 170, 94, 2, 4);
             fg.FillEllipse(greenBrush, 170, 94, 2, 4);
             Thread.Sleep(600);
-            fg.DrawLine(goldPen, 120 , 40, 170, 94);
+            fg.DrawLine(goldPen, 121 , 42, 171, 96);
             Thread.Sleep(600);
-            fg.DrawLine(goldPen, 58,67, 170, 94);
+            fg.DrawLine(goldPen, 59,69, 171, 96);
             Thread.Sleep(600);
             fg.DrawEllipse(greenPen, 160, 190, 2, 4);
             fg.FillEllipse(greenBrush, 160, 190, 2, 4);
             Thread.Sleep(600);
-            fg.DrawLine(goldPen, 170, 94, 160, 190);
+            fg.DrawLine(goldPen, 170, 94, 161, 192);
             Thread.Sleep(600);
             fg.DrawEllipse(greenPen, 170, 200, 2, 4);
             fg.FillEllipse(greenBrush, 170, 200, 2, 4);
             Thread.Sleep(600);
-            fg.DrawLine(goldPen, 160, 190, 170, 200);
+            fg.DrawLine(goldPen, 161, 192, 171, 202);
             Thread.Sleep(600);
 
             //Drawing the tittle and Paragraph for libra and playign the  taDa sound
             fg.DrawString("Libra:The Scales Of Balance", tittleFont, greenBrush, 30, 10);
             Thread.Sleep(2000);
-            fg.DrawString("Libra:This constellation stands for law, balance,and ", paragraphFont, yellowBrush, 0, 210);
+            fg.DrawString("Libra:This constellation stands for law, balance, ", paragraphFont, yellowBrush, 0, 210);
             Thread.Sleep(1000);
-            fg.DrawString("justice.The altertanite name is scorpions claw. ", paragraphFont, yellowBrush, 0, 230);
+            fg.DrawString("and justice.The altertanite name is scorpions claw. ", paragraphFont, yellowBrush, 0, 230);
             Thread.Sleep(1000);
-            fg.DrawString(" Some Of the postive traits for libra are: ", paragraphFont, yellowBrush, 0, 250);
+            fg.DrawString("Some Of the postive traits for libra are:", paragraphFont, yellowBrush, 0, 250);
             Thread.Sleep (1000);
             fg.DrawString("diplomaitic,romantic,charming and easygoing.", paragraphFont, yellowBrush, 0, 270);
             SoundPlayer taDa = new SoundPlayer(Properties.Resources.Ta_Da_SoundBible_com_1884170640);
             taDa.PlaySync();
-            Thread.Sleep(600000000);
+            Thread.Sleep(10000);
         }
     }
 }
