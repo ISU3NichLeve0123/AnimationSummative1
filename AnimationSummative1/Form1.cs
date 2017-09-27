@@ -1,5 +1,5 @@
 ﻿//Nicholas levesque, Sept 27, 2017
-//this program demonstrated timing effects with sounds and graphics
+//This program uses graphics, sounds, and timing to create a greeting a card
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
